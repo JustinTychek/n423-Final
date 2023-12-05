@@ -1,0 +1,51 @@
+<script>
+    var modal = document.getElementById("myModal");
+
+    var btn = document.getElementById("myBtn");
+    var comp = document.getElementById("complete");
+
+    var span = document.getElementsByClassName("close")[0];
+
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+<div id="account">
+
+    <h1>Account</h1>
+    <button id="myBtn" class="add">Add an Item</button>
+    <button class="button">Edit Profile</button>
+    <button class="button"><img class="heart" src="../../images/heart.svg" alt=""> Favorites</button>
+
+
+
+    <div id="myModal" class="modal">
+
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="form">
+                <h1>Add Your Item</h1>
+                <input id="myImage" type="file">
+                <input type="text" id="itemName" placeholder="Item Name">
+                <input type="text" id="itemPrice" placeholder="Price">
+                <textarea type="text" id="itemDesc" placeholder="Description"></textarea>
+                <input type="number" id="itemQuantity" placeholder="Quantity">
+                <button id="complete" class="complete" onclick="createItemNow()">Complete</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="account-holder"></div>
+</div>

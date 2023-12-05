@@ -1,0 +1,32 @@
+nav {
+  height: 60px;
+  background-color: #3e261f;
+  display: flex;
+  align-items: center;
+
+  justify-content: right;
+
+  .links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 35%;
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .cart {
+      height: 30px;
+    }
+
+    .signout {
+      border: solid 2px white;
+      padding: 8px;
+      border-radius: 50px;
+      background-color: white;
+      color: #3e261f;
+      font-weight: bold;
+    }
+  }
+}

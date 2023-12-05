@@ -1,0 +1,13 @@
+.shop {
+  .header {
+    height: 300px;
+    width: 100%;
+    background-color: rgb(192, 214, 255);
+    // background-image: linear-gradient(to left, rgba(0, 0, 0, 0.3)),
+    //   url(../images/browse-hero.jpg);
+    // // background-size: 2300px;
+    background-size: cover;
+
+    background-repeat: none;
+  }
+}
